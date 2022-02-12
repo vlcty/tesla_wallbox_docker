@@ -5,7 +5,7 @@ services:
         container_name: exporter
         environment:
             TESLA_WALLBOX_IP: 10.10.0.39
-            DEBUG: true
+            DEBUG: "true"
 
     influxdb:
         image: influxdb:latest
