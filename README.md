@@ -17,7 +17,7 @@ A nice dashboard will tell you the vitals of your wallbox.
 
 Open the `compose.yml` file and read it. It's very simple and beginner friendly. Exchange the `TESLA_WALLBOX_IP` env variable with the real IP address of your Tesla gen 3 wallbox. Afterwards you can start the stack:
 
-   docker compose up -d
+   docker-compose up -d
 
 After some time you should be able to open [InfluxDB](http://localhost:8086). Log in with the following credentials:
 
