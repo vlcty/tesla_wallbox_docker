@@ -1,1208 +1,1116 @@
 {
- "meta": {
-  "version": "1",
-  "type": "dashboard",
-  "name": "Tesla Wallbox-Template",
-  "description": "template created from dashboard: Tesla Wallbox"
- },
- "content": {
-  "data": {
-   "type": "dashboard",
-   "attributes": {
-    "name": "Tesla Wallbox",
-    "description": ""
-   },
-   "relationships": {
-    "label": {
-     "data": []
-    },
-    "cell": {
-     "data": [
-      {
-       "type": "cell",
-       "id": "085f8a33ab1ef000"
-      },
-      {
-       "type": "cell",
-       "id": "085f8b17fd431000"
-      },
-      {
-       "type": "cell",
-       "id": "085f8bc4bac31000"
-      },
-      {
-       "type": "cell",
-       "id": "085f8f3cdb031000"
-      },
-      {
-       "type": "cell",
-       "id": "085f8fbf36831000"
-      },
-      {
-       "type": "cell",
-       "id": "086018fc7be81000"
-      },
-      {
-       "type": "cell",
-       "id": "0860195a4c681000"
-      },
-      {
-       "type": "cell",
-       "id": "08601ac2d4281000"
-      },
-      {
-       "type": "cell",
-       "id": "08601af5e5281000"
-      },
-      {
-       "type": "cell",
-       "id": "08601b8ea3281000"
-      }
-     ]
-    },
-    "variable": {
-     "data": []
-    }
-   }
+  "meta": {
+    "version": "1",
+    "type": "dashboard",
+    "name": "Tesla Wallbox-Template",
+    "description": "template created from dashboard: Tesla Wallbox"
   },
-  "included": [
-   {
-    "id": "085f8a33ab1ef000",
-    "type": "cell",
-    "attributes": {
-     "x": 3,
-     "y": 0,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "085f8a33ab1ef000"
-      }
-     }
-    }
-   },
-   {
-    "id": "085f8b17fd431000",
-    "type": "cell",
-    "attributes": {
-     "x": 0,
-     "y": 10,
-     "w": 12,
-     "h": 4
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "085f8b17fd431000"
-      }
-     }
-    }
-   },
-   {
-    "id": "085f8bc4bac31000",
-    "type": "cell",
-    "attributes": {
-     "x": 0,
-     "y": 6,
-     "w": 12,
-     "h": 4
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "085f8bc4bac31000"
-      }
-     }
-    }
-   },
-   {
-    "id": "085f8f3cdb031000",
-    "type": "cell",
-    "attributes": {
-     "x": 6,
-     "y": 0,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "085f8f3cdb031000"
-      }
-     }
-    }
-   },
-   {
-    "id": "085f8fbf36831000",
-    "type": "cell",
-    "attributes": {
-     "x": 9,
-     "y": 0,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "085f8fbf36831000"
-      }
-     }
-    }
-   },
-   {
-    "id": "086018fc7be81000",
-    "type": "cell",
-    "attributes": {
-     "x": 6,
-     "y": 3,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "086018fc7be81000"
-      }
-     }
-    }
-   },
-   {
-    "id": "0860195a4c681000",
-    "type": "cell",
-    "attributes": {
-     "x": 0,
-     "y": 0,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "0860195a4c681000"
-      }
-     }
-    }
-   },
-   {
-    "id": "08601ac2d4281000",
-    "type": "cell",
-    "attributes": {
-     "x": 0,
-     "y": 3,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "08601ac2d4281000"
-      }
-     }
-    }
-   },
-   {
-    "id": "08601af5e5281000",
-    "type": "cell",
-    "attributes": {
-     "x": 3,
-     "y": 3,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "08601af5e5281000"
-      }
-     }
-    }
-   },
-   {
-    "id": "08601b8ea3281000",
-    "type": "cell",
-    "attributes": {
-     "x": 9,
-     "y": 3,
-     "w": 3,
-     "h": 3
-    },
-    "relationships": {
-     "view": {
-      "data": {
-       "type": "view",
-       "id": "08601b8ea3281000"
-      }
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "085f8a33ab1ef000",
-    "attributes": {
-     "name": "Netzfrequenz",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
-          }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
+  "content": {
+    "data": {
+      "type": "dashboard",
+      "attributes": {
+        "name": "Tesla Wallbox",
+        "description": ""
+      },
+      "relationships": {
+        "label": {
+          "data": []
+        },
+        "cell": {
+          "data": [
+            {
+              "type": "cell",
+              "id": "0861ed1459012000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145a812000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145b412000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145c412000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145d012000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145dc12000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed145e812000"
+            },
+            {
+              "type": "cell",
+              "id": "0861ed1462012000"
+            },
+            {
+              "type": "cell",
+              "id": "09266c0de7312000"
+            }
+          ]
+        },
+        "variable": {
+          "data": []
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Hetz",
-        "prefix": "",
-        "suffix": " Hz",
-        "base": "10",
-        "scale": "linear"
-       }
-      },
-      "type": "line-plus-single-stat",
-      "legend": {},
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "prefix": "",
-      "suffix": "",
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 2
-      },
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "085f8b17fd431000",
-    "attributes": {
-     "name": "Volts",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      }
+    },
+    "included": [
+      {
+        "id": "0861ed1459012000",
+        "type": "cell",
+        "attributes": {
+          "x": 3,
+          "y": 0,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed1459012000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Volt",
-        "prefix": "",
-        "suffix": " V",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "xy",
-      "legend": {},
-      "geom": "line",
-      "colors": [
-       {
-        "id": "07949f61-0a8f-419a-9388-39179e30ead3",
-        "type": "scale",
-        "hex": "#31C0F6",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
-        "type": "scale",
-        "hex": "#A500A5",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
-        "type": "scale",
-        "hex": "#FF7E27",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       }
-      ],
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "085f8bc4bac31000",
-    "attributes": {
-     "name": "Ampere",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_c_current\" or r[\"_measurement\"] == \"neutral_current\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145a812000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 6,
+          "w": 12,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145a812000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Ampere",
-        "prefix": "",
-        "suffix": " A",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "xy",
-      "legend": {},
-      "geom": "line",
-      "colors": [
-       {
-        "id": "07949f61-0a8f-419a-9388-39179e30ead3",
-        "type": "scale",
-        "hex": "#31C0F6",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
-        "type": "scale",
-        "hex": "#A500A5",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
-        "type": "scale",
-        "hex": "#FF7E27",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       }
-      ],
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "085f8f3cdb031000",
-    "attributes": {
-     "name": "Abgegebene Energie",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0\n    })\n  )\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145b412000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 0,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145b412000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Dispensed energy",
-        "prefix": "",
-        "suffix": " kWh",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "line-plus-single-stat",
-      "legend": {},
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "prefix": "",
-      "suffix": " kWh",
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 2
-      },
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "085f8fbf36831000",
-    "attributes": {
-     "name": "Kosten",
-     "properties": {
-      "shape": "chronograf-v2",
-      "type": "single-stat",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0 * 28.0 / 100.0\n    })\n  )\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145c412000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 3,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145c412000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "prefix": "",
-      "tickPrefix": "",
-      "suffix": " €",
-      "tickSuffix": "",
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 2
       },
-      "note": "",
-      "showNoteWhenEmpty": false
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "086018fc7be81000",
-    "attributes": {
-     "name": "Temperatur",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"handle_temperature\" or r[\"_measurement\"] == \"mcu_temperature\" or r[\"_measurement\"] == \"pcb_temperature\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145d012000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 10,
+          "w": 12,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145d012000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Temperatur",
-        "prefix": "",
-        "suffix": " °C",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "xy",
-      "legend": {},
-      "geom": "line",
-      "colors": [
-       {
-        "id": "591c8bb7-bd97-482c-a94e-8fd5bae184f3",
-        "type": "scale",
-        "hex": "#31C0F6",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "b92a6558-36dd-4d91-9dfd-582e2c128329",
-        "type": "scale",
-        "hex": "#A500A5",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "d87d4e4d-e334-41a4-9907-5a01527e859d",
-        "type": "scale",
-        "hex": "#FF7E27",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       }
-      ],
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 20,
-      "yTickStart": 0,
-      "yTickStep": 1,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "0860195a4c681000",
-    "attributes": {
-     "name": "Netzspannung",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145dc12000",
+        "type": "cell",
+        "attributes": {
+          "x": 9,
+          "y": 0,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145dc12000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "Volt",
-        "prefix": "",
-        "suffix": " V",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "line-plus-single-stat",
-      "legend": {},
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "prefix": "",
-      "suffix": "",
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 2
-      },
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "08601ac2d4281000",
-    "attributes": {
-     "name": "Config State",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"config_status\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed145e812000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed145e812000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "line-plus-single-stat",
-      "legend": {},
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "prefix": "",
-      "suffix": "",
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 0
-      },
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "08601af5e5281000",
-    "attributes": {
-     "name": "EVSE state",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"evse_state\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "0861ed1462012000",
+        "type": "cell",
+        "attributes": {
+          "x": 9,
+          "y": 3,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0861ed1462012000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "line-plus-single-stat",
-      "legend": {},
-      "colors": [
-       {
-        "id": "base",
-        "type": "text",
-        "hex": "#00C9FF",
-        "name": "laser",
-        "value": 0
-       }
-      ],
-      "prefix": "",
-      "suffix": "",
-      "decimalPlaces": {
-       "isEnforced": true,
-       "digits": 0
-      },
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   },
-   {
-    "type": "view",
-    "id": "08601b8ea3281000",
-    "attributes": {
-     "name": "Auto verbunden und Kontakt geschlossen",
-     "properties": {
-      "shape": "chronograf-v2",
-      "queries": [
-       {
-        "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"contactor_closed\" or r[\"_measurement\"] == \"vehicle_connected\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
-        "editMode": "advanced",
-        "name": "",
-        "builderConfig": {
-         "buckets": [],
-         "tags": [
-          {
-           "key": "_measurement",
-           "values": [],
-           "aggregateFunctionType": "filter"
+      {
+        "id": "09266c0de7312000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 3,
+          "w": 6,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "09266c0de7312000"
+            }
           }
-         ],
-         "functions": [
-          {
-           "name": "mean"
-          }
-         ],
-         "aggregateWindow": {
-          "period": "auto",
-          "fillValues": false
-         }
         }
-       }
-      ],
-      "axes": {
-       "x": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       },
-       "y": {
-        "bounds": [
-         "",
-         ""
-        ],
-        "label": "",
-        "prefix": "",
-        "suffix": "",
-        "base": "10",
-        "scale": "linear"
-       }
       },
-      "type": "xy",
-      "legend": {},
-      "geom": "line",
-      "colors": [
-       {
-        "id": "591c8bb7-bd97-482c-a94e-8fd5bae184f3",
-        "type": "scale",
-        "hex": "#31C0F6",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "b92a6558-36dd-4d91-9dfd-582e2c128329",
-        "type": "scale",
-        "hex": "#A500A5",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       },
-       {
-        "id": "d87d4e4d-e334-41a4-9907-5a01527e859d",
-        "type": "scale",
-        "hex": "#FF7E27",
-        "name": "Nineteen Eighty Four",
-        "value": 0
-       }
-      ],
-      "note": "",
-      "showNoteWhenEmpty": false,
-      "xColumn": "_time",
-      "generateXAxisTicks": [],
-      "xTotalTicks": 0,
-      "xTickStart": 0,
-      "xTickStep": 0,
-      "yColumn": "_value",
-      "generateYAxisTicks": [],
-      "yTotalTicks": 0,
-      "yTickStart": 0,
-      "yTickStep": 0,
-      "shadeBelow": false,
-      "position": "overlaid",
-      "timeFormat": "",
-      "hoverDimension": "auto",
-      "legendColorizeRows": true,
-      "legendOpacity": 1,
-      "legendOrientationThreshold": 100000000
-     }
-    }
-   }
-  ]
- },
- "labels": []
+      {
+        "type": "view",
+        "id": "0861ed1459012000",
+        "attributes": {
+          "name": "Netzfrequenz",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Herz",
+                "prefix": "",
+                "suffix": " Hz",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "line-plus-single-stat",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000
+            },
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "prefix": "",
+            "suffix": " Hz",
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145a812000",
+        "attributes": {
+          "name": "Ampere",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_c_current\")\n  // or r[\"_measurement\"] == \"neutral_current\"\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Ampere",
+                "prefix": "",
+                "suffix": " A",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {},
+            "geom": "line",
+            "colors": [
+              {
+                "id": "07949f61-0a8f-419a-9388-39179e30ead3",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145b412000",
+        "attributes": {
+          "name": "Abgegebene Energie",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0\n    })\n  )\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": null,
+                "label": "Verladene Energie",
+                "prefix": "",
+                "suffix": " kWh",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "line-plus-single-stat",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000
+            },
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "prefix": "",
+            "suffix": " kWh",
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 0
+            },
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145c412000",
+        "attributes": {
+          "name": "Temperatur",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"handle_temperature\" or r[\"_measurement\"] == \"mcu_temperature\" or r[\"_measurement\"] == \"pcb_temperature\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> map(fn: (r) => ({ _time: r._time, _value: r._value, _measurement:\n    if r._measurement == \"mcu_temperature\" then \"Mikrocontroller\"\n    else if r._measurement == \"handle_temperature\" then \"Griff\"\n    else if r._measurement == \"pcb_temperature\" then \"Platine\"\n    else \"unbekannt\"}))\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Temperatur",
+                "prefix": "",
+                "suffix": " °C",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000
+            },
+            "geom": "line",
+            "colors": [
+              {
+                "id": "591c8bb7-bd97-482c-a94e-8fd5bae184f3",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "b92a6558-36dd-4d91-9dfd-582e2c128329",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "d87d4e4d-e334-41a4-9907-5a01527e859d",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 20,
+            "yTickStart": 0,
+            "yTickStep": 1,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145d012000",
+        "attributes": {
+          "name": "Volts",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Volt",
+                "prefix": "",
+                "suffix": " V",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {},
+            "geom": "line",
+            "colors": [
+              {
+                "id": "07949f61-0a8f-419a-9388-39179e30ead3",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145dc12000",
+        "attributes": {
+          "name": "Kosten",
+          "properties": {
+            "shape": "chronograf-v2",
+            "type": "single-stat",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0 * 28.0 / 100.0\n    })\n  )\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "prefix": "",
+            "tickPrefix": "",
+            "suffix": " €",
+            "tickSuffix": "",
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed145e812000",
+        "attributes": {
+          "name": "Netzspannung",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Volt",
+                "prefix": "",
+                "suffix": " V",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "line-plus-single-stat",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000
+            },
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "prefix": "",
+            "suffix": " V",
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 2
+            },
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0861ed1462012000",
+        "attributes": {
+          "name": "Auto verbunden und Kontakt geschlossen",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"contactor_closed\" or r[\"_measurement\"] == \"vehicle_connected\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {},
+            "geom": "line",
+            "colors": [
+              {
+                "id": "591c8bb7-bd97-482c-a94e-8fd5bae184f3",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "b92a6558-36dd-4d91-9dfd-582e2c128329",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "d87d4e4d-e334-41a4-9907-5a01527e859d",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "09266c0de7312000",
+        "attributes": {
+          "name": "Ladeleistung",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_current\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> pivot(columnKey: [\"_measurement\"], rowKey: [\"_time\"], valueColumn: \"_value\" )\n  |> map(fn: (r) => ({ _time: r._time, _field: \"power\", _value: r.phase_a_voltage * r.phase_a_current + r.phase_b_voltage * r.phase_b_current + r.phase_c_voltage * r.phase_c_current}))\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Watt",
+                "prefix": "",
+                "suffix": "W",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "line-plus-single-stat",
+            "staticLegend": {
+              "colorizeRows": true,
+              "opacity": 1,
+              "orientationThreshold": 100000000,
+              "widthRatio": 1
+            },
+            "colors": [
+              {
+                "id": "base",
+                "type": "text",
+                "hex": "#00C9FF",
+                "name": "laser",
+                "value": 0
+              }
+            ],
+            "prefix": "",
+            "suffix": " W",
+            "decimalPlaces": {
+              "isEnforced": true,
+              "digits": 0
+            },
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      }
+    ]
+  },
+  "labels": []
 }
