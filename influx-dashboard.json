@@ -20,50 +20,55 @@
           "data": [
             {
               "type": "cell",
-              "id": "0861ed1459012000"
+              "id": "0926d457c7bb6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145a812000"
+              "id": "0926d457c83b6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145b412000"
+              "id": "0926d457c8bb6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145c412000"
+              "id": "0926d457c8fb6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145d012000"
+              "id": "0926d457c9fb6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145dc12000"
+              "id": "0926d457ca7b6000"
             },
             {
               "type": "cell",
-              "id": "0861ed145e812000"
+              "id": "0926d457cabb6000"
             },
             {
               "type": "cell",
-              "id": "0861ed1462012000"
+              "id": "0926d457cafb6000"
             },
             {
               "type": "cell",
-              "id": "09266c0de7312000"
+              "id": "0926d457cb3b6000"
             }
           ]
         },
         "variable": {
-          "data": []
+          "data": [
+            {
+              "type": "variable",
+              "id": "0926d4c4994ac000"
+            }
+          ]
         }
       }
     },
     "included": [
       {
-        "id": "0861ed1459012000",
+        "id": "0926d457c7bb6000",
         "type": "cell",
         "attributes": {
           "x": 3,
@@ -75,67 +80,13 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "0861ed1459012000"
+              "id": "0926d457c7bb6000"
             }
           }
         }
       },
       {
-        "id": "0861ed145a812000",
-        "type": "cell",
-        "attributes": {
-          "x": 0,
-          "y": 6,
-          "w": 12,
-          "h": 4
-        },
-        "relationships": {
-          "view": {
-            "data": {
-              "type": "view",
-              "id": "0861ed145a812000"
-            }
-          }
-        }
-      },
-      {
-        "id": "0861ed145b412000",
-        "type": "cell",
-        "attributes": {
-          "x": 6,
-          "y": 0,
-          "w": 3,
-          "h": 3
-        },
-        "relationships": {
-          "view": {
-            "data": {
-              "type": "view",
-              "id": "0861ed145b412000"
-            }
-          }
-        }
-      },
-      {
-        "id": "0861ed145c412000",
-        "type": "cell",
-        "attributes": {
-          "x": 6,
-          "y": 3,
-          "w": 3,
-          "h": 3
-        },
-        "relationships": {
-          "view": {
-            "data": {
-              "type": "view",
-              "id": "0861ed145c412000"
-            }
-          }
-        }
-      },
-      {
-        "id": "0861ed145d012000",
+        "id": "0926d457c83b6000",
         "type": "cell",
         "attributes": {
           "x": 0,
@@ -147,13 +98,67 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "0861ed145d012000"
+              "id": "0926d457c83b6000"
             }
           }
         }
       },
       {
-        "id": "0861ed145dc12000",
+        "id": "0926d457c8bb6000",
+        "type": "cell",
+        "attributes": {
+          "x": 0,
+          "y": 6,
+          "w": 12,
+          "h": 4
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0926d457c8bb6000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0926d457c8fb6000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 0,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0926d457c8fb6000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0926d457c9fb6000",
+        "type": "cell",
+        "attributes": {
+          "x": 6,
+          "y": 3,
+          "w": 3,
+          "h": 3
+        },
+        "relationships": {
+          "view": {
+            "data": {
+              "type": "view",
+              "id": "0926d457c9fb6000"
+            }
+          }
+        }
+      },
+      {
+        "id": "0926d457ca7b6000",
         "type": "cell",
         "attributes": {
           "x": 9,
@@ -165,13 +170,13 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "0861ed145dc12000"
+              "id": "0926d457ca7b6000"
             }
           }
         }
       },
       {
-        "id": "0861ed145e812000",
+        "id": "0926d457cabb6000",
         "type": "cell",
         "attributes": {
           "x": 0,
@@ -183,13 +188,13 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "0861ed145e812000"
+              "id": "0926d457cabb6000"
             }
           }
         }
       },
       {
-        "id": "0861ed1462012000",
+        "id": "0926d457cafb6000",
         "type": "cell",
         "attributes": {
           "x": 9,
@@ -201,13 +206,13 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "0861ed1462012000"
+              "id": "0926d457cafb6000"
             }
           }
         }
       },
       {
-        "id": "09266c0de7312000",
+        "id": "0926d457cb3b6000",
         "type": "cell",
         "attributes": {
           "x": 0,
@@ -219,14 +224,14 @@
           "view": {
             "data": {
               "type": "view",
-              "id": "09266c0de7312000"
+              "id": "0926d457cb3b6000"
             }
           }
         }
       },
       {
         "type": "view",
-        "id": "0861ed1459012000",
+        "id": "0926d457c7bb6000",
         "attributes": {
           "name": "Netzfrequenz",
           "properties": {
@@ -327,7 +332,113 @@
       },
       {
         "type": "view",
-        "id": "0861ed145a812000",
+        "id": "0926d457c83b6000",
+        "attributes": {
+          "name": "Volts",
+          "properties": {
+            "shape": "chronograf-v2",
+            "queries": [
+              {
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
+                "editMode": "advanced",
+                "name": "",
+                "builderConfig": {
+                  "buckets": [],
+                  "tags": [
+                    {
+                      "key": "_measurement",
+                      "values": [],
+                      "aggregateFunctionType": "filter"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "name": "mean"
+                    }
+                  ],
+                  "aggregateWindow": {
+                    "period": "auto",
+                    "fillValues": false
+                  }
+                }
+              }
+            ],
+            "axes": {
+              "x": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "",
+                "prefix": "",
+                "suffix": "",
+                "base": "10",
+                "scale": "linear"
+              },
+              "y": {
+                "bounds": [
+                  "",
+                  ""
+                ],
+                "label": "Volt",
+                "prefix": "",
+                "suffix": " V",
+                "base": "10",
+                "scale": "linear"
+              }
+            },
+            "type": "xy",
+            "staticLegend": {},
+            "geom": "line",
+            "colors": [
+              {
+                "id": "07949f61-0a8f-419a-9388-39179e30ead3",
+                "type": "scale",
+                "hex": "#31C0F6",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
+                "type": "scale",
+                "hex": "#A500A5",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              },
+              {
+                "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
+                "type": "scale",
+                "hex": "#FF7E27",
+                "name": "Nineteen Eighty Four",
+                "value": 0
+              }
+            ],
+            "note": "",
+            "showNoteWhenEmpty": false,
+            "xColumn": "_time",
+            "generateXAxisTicks": [],
+            "xTotalTicks": 0,
+            "xTickStart": 0,
+            "xTickStep": 0,
+            "yColumn": "_value",
+            "generateYAxisTicks": [],
+            "yTotalTicks": 0,
+            "yTickStart": 0,
+            "yTickStep": 0,
+            "shadeBelow": false,
+            "position": "overlaid",
+            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
+            "hoverDimension": "auto",
+            "legendColorizeRows": true,
+            "legendHide": false,
+            "legendOpacity": 1,
+            "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "type": "view",
+        "id": "0926d457c8bb6000",
         "attributes": {
           "name": "Ampere",
           "properties": {
@@ -433,7 +544,7 @@
       },
       {
         "type": "view",
-        "id": "0861ed145b412000",
+        "id": "0926d457c8fb6000",
         "attributes": {
           "name": "Abgegebene Energie",
           "properties": {
@@ -531,7 +642,7 @@
       },
       {
         "type": "view",
-        "id": "0861ed145c412000",
+        "id": "0926d457c9fb6000",
         "attributes": {
           "name": "Temperatur",
           "properties": {
@@ -641,113 +752,7 @@
       },
       {
         "type": "view",
-        "id": "0861ed145d012000",
-        "attributes": {
-          "name": "Volts",
-          "properties": {
-            "shape": "chronograf-v2",
-            "queries": [
-              {
-                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-                "editMode": "advanced",
-                "name": "",
-                "builderConfig": {
-                  "buckets": [],
-                  "tags": [
-                    {
-                      "key": "_measurement",
-                      "values": [],
-                      "aggregateFunctionType": "filter"
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "name": "mean"
-                    }
-                  ],
-                  "aggregateWindow": {
-                    "period": "auto",
-                    "fillValues": false
-                  }
-                }
-              }
-            ],
-            "axes": {
-              "x": {
-                "bounds": [
-                  "",
-                  ""
-                ],
-                "label": "",
-                "prefix": "",
-                "suffix": "",
-                "base": "10",
-                "scale": "linear"
-              },
-              "y": {
-                "bounds": [
-                  "",
-                  ""
-                ],
-                "label": "Volt",
-                "prefix": "",
-                "suffix": " V",
-                "base": "10",
-                "scale": "linear"
-              }
-            },
-            "type": "xy",
-            "staticLegend": {},
-            "geom": "line",
-            "colors": [
-              {
-                "id": "07949f61-0a8f-419a-9388-39179e30ead3",
-                "type": "scale",
-                "hex": "#31C0F6",
-                "name": "Nineteen Eighty Four",
-                "value": 0
-              },
-              {
-                "id": "0efb3d65-6935-4d43-8f8b-ffcf22171cc8",
-                "type": "scale",
-                "hex": "#A500A5",
-                "name": "Nineteen Eighty Four",
-                "value": 0
-              },
-              {
-                "id": "1e461dee-5380-4b3f-b095-7457eab61ebf",
-                "type": "scale",
-                "hex": "#FF7E27",
-                "name": "Nineteen Eighty Four",
-                "value": 0
-              }
-            ],
-            "note": "",
-            "showNoteWhenEmpty": false,
-            "xColumn": "_time",
-            "generateXAxisTicks": [],
-            "xTotalTicks": 0,
-            "xTickStart": 0,
-            "xTickStep": 0,
-            "yColumn": "_value",
-            "generateYAxisTicks": [],
-            "yTotalTicks": 0,
-            "yTickStart": 0,
-            "yTickStep": 0,
-            "shadeBelow": false,
-            "position": "overlaid",
-            "timeFormat": "DD/MM/YYYY HH:mm:ss.sss",
-            "hoverDimension": "auto",
-            "legendColorizeRows": true,
-            "legendHide": false,
-            "legendOpacity": 1,
-            "legendOrientationThreshold": 100000000
-          }
-        }
-      },
-      {
-        "type": "view",
-        "id": "0861ed145dc12000",
+        "id": "0926d457ca7b6000",
         "attributes": {
           "name": "Kosten",
           "properties": {
@@ -755,7 +760,7 @@
             "type": "single-stat",
             "queries": [
               {
-                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0 * 28.0 / 100.0\n    })\n  )\n  |> yield(name: \"last\")",
+                "text": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"dispensed_energy\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> map(fn: (r) => ({\n      r with\n      _value: r._value / 1000.0 * float(v: v.powerprice) / 100.0\n    })\n  )\n  |> yield(name: \"last\")",
                 "editMode": "advanced",
                 "name": "",
                 "builderConfig": {
@@ -803,7 +808,7 @@
       },
       {
         "type": "view",
-        "id": "0861ed145e812000",
+        "id": "0926d457cabb6000",
         "attributes": {
           "name": "Netzspannung",
           "properties": {
@@ -904,7 +909,7 @@
       },
       {
         "type": "view",
-        "id": "0861ed1462012000",
+        "id": "0926d457cafb6000",
         "attributes": {
           "name": "Auto verbunden und Kontakt geschlossen",
           "properties": {
@@ -1010,7 +1015,7 @@
       },
       {
         "type": "view",
-        "id": "09266c0de7312000",
+        "id": "0926d457cb3b6000",
         "attributes": {
           "name": "Ladeleistung",
           "properties": {
@@ -1107,6 +1112,27 @@
             "legendHide": false,
             "legendOpacity": 1,
             "legendOrientationThreshold": 100000000
+          }
+        }
+      },
+      {
+        "id": "0926d4c4994ac000",
+        "type": "variable",
+        "attributes": {
+          "name": "powerprice",
+          "arguments": {
+            "type": "constant",
+            "values": [
+              "28.0"
+            ]
+          },
+          "selected": [
+            "0.28"
+          ]
+        },
+        "relationships": {
+          "label": {
+            "data": []
           }
         }
       }
