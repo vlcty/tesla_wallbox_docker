@@ -12,7 +12,7 @@ metadata:
 spec:
     name: powerprice
     selected:
-      - "0.28"
+      - "28.0"
     type: constant
     values:
       - "28.0"

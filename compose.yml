@@ -21,6 +21,7 @@ services:
             DOCKER_INFLUXDB_INIT_PASSWORD: supers3cret
             DOCKER_INFLUXDB_INIT_ORG: whatever
             DOCKER_INFLUXDB_INIT_BUCKET: dontcare
+            DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: vFI6IQJTREQ3GNnpwWBVUwiCAxTZXXHWn70cl2G5FzZuHyeZoW8GKmnmdVEa1eAXaJZdAiluObMjUGTmhNsnzw==
 
 volumes:
     influx-config:
