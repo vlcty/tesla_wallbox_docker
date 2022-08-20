@@ -1,8 +1,8 @@
 # tesla_wallbox_docker
 
-InfluxDB + Wallbox Exporter + Docker = <3
+InfluxDB + tesla_wallbox_exporter + Grafana + Telegraf + Docker = <3
 
-> :warning: This software was designed around Europe's three phase power gid. If you are outside of said region this software might not work out of the box for you.
+> :warning: This software is designed around Europe's three phase power grid. If you are located outside said region this software might not work for you.
 
 This is my first public compose file. Please be gentle.
 
