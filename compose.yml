@@ -6,6 +6,7 @@ services:
         environment:
             TESLA_WALLBOX_IP: 10.10.0.39
             DEBUG: "true"
+            KEEP_POWER_METER: "true"
 
     influxdb:
         image: influxdb:latest
@@ -21,3 +22,19 @@ services:
             DOCKER_INFLUXDB_INIT_PASSWORD: supers3cret
             DOCKER_INFLUXDB_INIT_ORG: whatever
             DOCKER_INFLUXDB_INIT_BUCKET: dontcare
+            DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: KoYlsQXuKGvoJrpfcbmQeGXyr6HdYYdRmcn3et84vHKAwiv9Lv3vNICwP7qyk6n-DgwEXxYKHkls_Jv2jeNn3w==
+
+    grafana:
+        image: grafana/grafana-oss
+        container_name: grafana
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./grafana_provision:/etc/grafana/provisioning
+            - ./grafana_dashboards:/etc/dashboards
+
+    telegraf:
+        image: telegraf
+        container_name: telegraf
+        volumes:
+            - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro

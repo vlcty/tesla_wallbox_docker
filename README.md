@@ -2,37 +2,37 @@
 
 InfluxDB + Wallbox Exporter + Docker = <3
 
-This is my first public compose environment. Please be gentle.
+> :warning: This software was designed around Europe's three phase power gid. If you are outside of said region this software might not work out of the box for you.
 
-## What it does
+This is my first public compose file. Please be gentle.
 
-This stack contains two images:
+## What you get
+
+Current charging session:
+
+![Chargin session](/.github/screenshots/charging-session.png?raw=true "Charging session overview")
+
+Grid details:
+
+![Grid details](/.github/screenshots/grid-details.png?raw=true "Grid details")
+
+## Stack overview
+
+This stack is composed from:
 
 - InfluxDB: A time series database
-- tesla_wallbox_exporter: A prometheus like exporter / proxy to get data from a Tesla wallbox
-
-A nice dashboard will tell you the vitals of your wallbox.
+- Grafana: A visualization tool
+- tesla_wallbox_exporter: A proxy appliation to translate the wallbox API result into prometheus format
+- Telegraf: Collects metrics from tesla_wallbox_exporter and writes them into influxdb
 
 ## Usage
 
-Open the `compose.yml` file and read it. It's very simple and beginner friendly. Exchange the `TESLA_WALLBOX_IP` env variable with the real IP address of your Tesla gen 3 wallbox. Afterwards you can start the stack:
+Open the `compose.yml` file and read it. It's very simple. Exchange the `TESLA_WALLBOX_IP` env variable with the real IP address of your Tesla gen 3 wallbox. Afterwards you can start the stack:
 
    docker-compose up -d
 
-After some time you should be able to open [InfluxDB](http://localhost:8086). Log in with the following credentials:
+That's basically it. Navigate to [Grafana](http://localhost:3000) and have a look at the dashboards. The default credentials are admin/admin.
 
-   Username: admin   
-   Password: supers3cret
+## Security
 
-After logging in successfully navigate to Data -> Scrapers -> Create scraper. Input the following details:
-
-   Name: wallbox   
-   Bucket to store scraped metrics: dontcare   
-   Target URL: http://exporter:8420/query   
-   Click "Create"
-
-InfluxDB should now query every 10 seconds for metrics.
-
-Last step is to add a dashboard. Navigate to Boards -> Create dashboard -> Import dashboard. Upload the `influx-dashboard.json` file or copy the content from it and click on the import button. Open the dashboard.
-
-Adapt the dashboard how you like it. For example adapt the "Costs" dashboard as it calculates by default with 28 (Euro-)Cents per kWh.
+This project contains hardcoded credentials and keys. Don't make it accessible from untrusted networks e.g. the internet.
