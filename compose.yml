@@ -12,8 +12,8 @@ services:
         image: influxdb:latest
         container_name: influx
         volumes:
-            - ./influx-data:/var/lib/influxdb2:rw
-            - ./influx-config:/etc/influxdb2:rw
+            - influx-data:/var/lib/influxdb2:rw
+            - influx-config:/etc/influxdb2:rw
         ports:
             - "8086:8086"
         environment:
@@ -38,3 +38,7 @@ services:
         container_name: telegraf
         volumes:
             - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+
+volumes:
+    influx-config:
+    influx-data:
