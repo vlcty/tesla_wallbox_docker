@@ -258,7 +258,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"total_uptime\")\n  |> filter(fn: (r) => r[\"_field\"] == \"counter\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> drop(columns: [\"_measurement\"])\n  |> set(key: \"_field\", value: \"Uptime\")",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"total_uptime\")\n  |> filter(fn: (r) => r[\"_field\"] == \"counter\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> drop(columns: [\"_measurement\", \"url\"])\n  |> set(key: \"_field\", value: \"Uptime\")",
           "refId": "A"
         },
         {
@@ -267,7 +267,7 @@
             "uid": "P3C6603E967DC8568"
           },
           "hide": false,
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"total_charging_time\")\n  |> filter(fn: (r) => r[\"_field\"] == \"counter\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> drop(columns: [\"_measurement\"])\n  |> set(key: \"_field\", value: \"charging\")",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"total_charging_time\")\n  |> filter(fn: (r) => r[\"_field\"] == \"counter\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n    |> drop(columns: [\"_measurement\", \"url\"])\n  |> set(key: \"_field\", value: \"charging\")",
           "refId": "B"
         }
       ],
