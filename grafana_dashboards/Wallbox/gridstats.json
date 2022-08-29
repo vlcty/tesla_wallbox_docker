@@ -110,7 +110,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> map(fn: (r) => ({ r with \n    _field: if r[\"_measurement\"] == \"phase_a_voltage\" then \"L1\"\n    else if r[\"_measurement\"] == \"phase_b_voltage\" then \"L2\"\n    else \"L3\"\n  }))\n  |> drop(columns: [\"_measurement\"])",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> map(fn: (r) => ({ r with \n    _field: if r[\"_measurement\"] == \"phase_a_voltage\" then \"L1\"\n    else if r[\"_measurement\"] == \"phase_b_voltage\" then \"L2\"\n    else \"L3\"\n  }))\n  |> drop(columns: [\"_measurement\", \"url\"])",
           "refId": "A"
         }
       ],
@@ -200,7 +200,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_c_current\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> map(fn: (r) => ({ r with \n    _field: if r[\"_measurement\"] == \"phase_a_current\" then \"L1\"\n    else if r[\"_measurement\"] == \"phase_b_current\" then \"L2\"\n    else \"L3\"\n  }))\n  |> drop(columns: [\"_measurement\"])",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_c_current\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> map(fn: (r) => ({ r with \n    _field: if r[\"_measurement\"] == \"phase_a_current\" then \"L1\"\n    else if r[\"_measurement\"] == \"phase_b_current\" then \"L2\"\n    else \"L3\"\n  }))\n  |> drop(columns: [\"_measurement\", \"url\"])",
           "refId": "A"
         }
       ],
@@ -290,7 +290,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzfrequenz\")",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzfrequenz\")\n  |> drop(columns: [\"url\"])",
           "refId": "A"
         }
       ],
@@ -381,7 +381,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzspannung\")",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzspannung\")\n  |> drop(columns: [\"url\"])",
           "refId": "A"
         }
       ],
@@ -487,7 +487,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"pilot_high_voltage\" or r[\"_measurement\"] == \"pilot_low_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"pilot_high_voltage\" or r[\"_measurement\"] == \"pilot_low_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> drop(columns: [\"url\"])",
           "refId": "A"
         },
         {
@@ -496,7 +496,7 @@
             "uid": "P3C6603E967DC8568"
           },
           "hide": false,
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"proximity_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"proximity_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> drop(columns: [\"url\"])",
           "refId": "B"
         }
       ],
