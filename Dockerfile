@@ -1,5 +1,5 @@
 FROM golang:rc-alpine AS builder
-RUN go install github.com/vlcty/tesla_wallbox_exporter@1.1.2
+RUN go install github.com/vlcty/tesla_wallbox_exporter@latest
 
 FROM alpine:latest
 RUN addgroup -S exporter && adduser -S exporter -G exporter
