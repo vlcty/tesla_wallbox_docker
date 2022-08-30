@@ -40,7 +40,7 @@
           "custom": {
             "axisCenteredZero": false,
             "axisColorMode": "text",
-            "axisLabel": "Volts",
+            "axisLabel": "Volt",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
@@ -130,7 +130,7 @@
           "custom": {
             "axisCenteredZero": false,
             "axisColorMode": "text",
-            "axisLabel": "Amperes",
+            "axisLabel": "Ampere",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
@@ -204,7 +204,7 @@
           "refId": "A"
         }
       ],
-      "title": "Ampere",
+      "title": "Amperage",
       "type": "timeseries"
     },
     {
@@ -220,7 +220,7 @@
           "custom": {
             "axisCenteredZero": false,
             "axisColorMode": "text",
-            "axisLabel": "Hz",
+            "axisLabel": "Frequency",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
@@ -290,7 +290,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzfrequenz\")\n  |> drop(columns: [\"url\"])",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_frequency\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> set(key: \"_field\", value: \"Frequency\")\n  |> drop(columns: [\"url\"])",
           "refId": "A"
         }
       ],
@@ -311,7 +311,7 @@
           "custom": {
             "axisCenteredZero": false,
             "axisColorMode": "text",
-            "axisLabel": "Voltage",
+            "axisLabel": "Volt",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
@@ -381,7 +381,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> set(key: \"_field\", value: \"Netzspannung\")\n  |> drop(columns: [\"url\"])",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"grid_voltage\")\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> set(key: \"_field\", value: \"Grid voltage\")\n  |> drop(columns: [\"url\"])",
           "refId": "A"
         }
       ],
@@ -519,6 +519,6 @@
   "timezone": "",
   "title": "Grid details",
   "uid": "aiRv9em4z",
-  "version": 1,
+  "version": 2,
   "weekStart": ""
 }
