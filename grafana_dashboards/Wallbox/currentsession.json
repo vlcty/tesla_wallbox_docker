@@ -83,7 +83,7 @@
             "type": "influxdb",
             "uid": "P3C6603E967DC8568"
           },
-          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_current\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> pivot(columnKey: [\"_measurement\"], rowKey: [\"_time\"], valueColumn: \"_value\" )\n  |> map(fn: (r) => ({ _time: r._time, _field: \"Ladeleistung\", _value: r.phase_a_voltage * r.phase_a_current + r.phase_b_voltage * r.phase_b_current + r.phase_c_voltage * r.phase_c_current}))\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)",
+          "query": "from(bucket: \"dontcare\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"phase_a_current\" or r[\"_measurement\"] == \"phase_a_voltage\" or r[\"_measurement\"] == \"phase_b_current\" or r[\"_measurement\"] == \"phase_b_voltage\" or r[\"_measurement\"] == \"phase_c_current\" or r[\"_measurement\"] == \"phase_c_voltage\")\n  |> filter(fn: (r) => r[\"_field\"] == \"gauge\")\n  |> pivot(columnKey: [\"_measurement\"], rowKey: [\"_time\"], valueColumn: \"_value\" )\n  |> map(fn: (r) => ({ _time: r._time, _field: \"Ladeleistung\", _value: r.phase_a_voltage * r.phase_a_current + r.phase_b_voltage * r.phase_b_current + r.phase_c_voltage * r.phase_c_current}))\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)",
           "refId": "A"
         }
       ],
