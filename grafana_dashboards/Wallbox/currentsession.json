@@ -38,6 +38,7 @@
           "color": {
             "mode": "thresholds"
           },
+          "decimals": 0,
           "mappings": [],
           "max": 11000,
           "min": 0,
