@@ -6,7 +6,7 @@ InfluxDB + tesla_wallbox_exporter + Grafana + Telegraf + Docker = <3
 > This software is designed around Europe's three phase power grid. If you are located outside said region this software might not work for you.
 
 > **Warning**   
-> A user reported problems on a Raspberry Pi running the Armv7 architecture. It seems that the official influxdb image does not support that architecture. Make sure you run this on amd64 or aarch64 architecture! Check with: `docker run -it --rm alpine apk --print-arch`
+> A user reported problems running this project on the armv7 architecture (Raspberry Pi 3 with 32bit OS). Apparently the official InfluxDB image is not available for that. Make sure you run this project on amd64 or aarch64 (Raspberry Pi OS 64 bit for example). You can check yours with: `docker run -it --rm alpine apk --print-arch`
 
 This is my first public compose file. Please be gentle.
 
