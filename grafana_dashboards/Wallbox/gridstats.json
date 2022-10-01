@@ -23,7 +23,7 @@
   },
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "graphTooltip": 0,
+  "graphTooltip": 1,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -519,6 +519,6 @@
   "timezone": "",
   "title": "Grid details",
   "uid": "aiRv9em4z",
-  "version": 2,
+  "version": 1,
   "weekStart": ""
 }
