@@ -4,7 +4,7 @@ services:
         build: .
         container_name: exporter
         environment:
-            TESLA_WALLBOX_IP: 10.10.0.39
+            TESLA_WALLBOX_IP: 10.10.0.109
             DEBUG: "true"
             KEEP_POWER_METER: "true"
 
